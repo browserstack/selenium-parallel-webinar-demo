@@ -9,7 +9,9 @@ This repository contains all the code to run from the Webinar held by [David Bur
 * Run the tests
 ``` pytest path/to_tests.py```
 
-** You can also use [BrowserStack](https://www.browserstack.com) if you set the following environment variables
+* With some of the tests you can change the driver by simply changing the `--driver browser` argument. For running against Firefox you would do ```pytest parallel/site_tests.py --driver Firefox```.
+
+* You can also use [BrowserStack](https://www.browserstack.com) if you set the following environment variables
 ```bash
 export BSUSERNAME=browserstack_user
 export BSPASSWORD=browserstack_key
